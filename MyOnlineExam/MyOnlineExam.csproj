@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D1DE0E4-2DDE-4BA0-A618-963C6FF9BC9E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyOnlineExam</RootNamespace>
+    <AssemblyName>MyOnlineExam</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Log_in.aspx" />
+    <Content Include="Account\register.aspx" />
+    <Content Include="Admin\admin_mes.aspx" />
+    <Content Include="Admin\admin_mes_mod.aspx" />
+    <Content Include="Admin\course_add.aspx" />
+    <Content Include="Admin\course_mod.aspx" />
+    <Content Include="Admin\studentgroup_add.aspx" />
+    <Content Include="Admin\teachergroup_add.aspx" />
+    <Content Include="Admin\testpaper_mod.aspx" />
+    <Content Include="Admin\user_add.aspx" />
+    <Content Include="Admin\user_mod.aspx" />
+    <Content Include="res\add.png" />
+    <Content Include="res\exit.png" />
+    <Content Include="res\head0.jpg" />
+    <Content Include="res\ico_Xp10.gif" />
+    <Content Include="res\left_bg_01.jpg" />
+    <Content Include="res\left_bg_02.jpg" />
+    <Content Include="res\left_bg_03.jpg" />
+    <Content Include="res\login.jpg" />
+    <Content Include="res\mark.png" />
+    <Content Include="res\modify.png" />
+    <Content Include="res\plan.png" />
+    <Content Include="res\print.png" />
+    <Content Include="res\profile.png" />
+    <Content Include="res\search.png" />
+    <Content Include="res\spellcheck.png" />
+    <Content Include="res\user1.png" />
+    <Content Include="CommandCode\命令模式关系类图.cd" />
+    <Content Include="Admin\admin.Master" />
+    <Content Include="Admin\Model.xls" />
+    <Content Include="Admin\Temp\20130512220154.xls" />
+    <Content Include="Admin\Temp\20130512220357.xls" />
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Student\answer.aspx" />
+    <Content Include="Student\exam_a.aspx" />
+    <Content Include="Student\have_test.aspx" />
+    <Content Include="Student\not_test.aspx" />
+    <Content Include="Student\score_query.aspx" />
+    <Content Include="Student\student_mes.aspx" />
+    <Content Include="Student\student_mes_mod.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Teacher\fillblank_add.aspx" />
+    <Content Include="Teacher\fillblank_mod.aspx" />
+    <Content Include="Teacher\judge_add.aspx" />
+    <Content Include="Teacher\judge_mod.aspx" />
+    <Content Include="Teacher\multiselect_add.aspx" />
+    <Content Include="Teacher\multiselect_mod.aspx" />
+    <Content Include="Teacher\singleselect_add.aspx" />
+    <Content Include="Teacher\singleselect_mod.aspx" />
+    <Content Include="Teacher\stu_grade_query.aspx" />
+    <Content Include="Teacher\stu_message_query.aspx" />
+    <Content Include="Teacher\teacher_mes.aspx" />
+    <Content Include="Teacher\teacher_mes_mod.aspx" />
+    <Content Include="Teacher\testpaper_add.aspx" />
+    <Content Include="Teacher\testpaper_mod.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Log_in.aspx.cs">
+      <DependentUpon>Log_in.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Log_in.aspx.designer.cs">
+      <DependentUpon>Log_in.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\admin_mes.aspx.cs">
+      <DependentUpon>admin_mes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\admin_mes.aspx.designer.cs">
+      <DependentUpon>admin_mes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\admin_mes_mod.aspx.cs">
+      <DependentUpon>admin_mes_mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\admin_mes_mod.aspx.designer.cs">
+      <DependentUpon>admin_mes_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\course_add.aspx.cs">
+      <DependentUpon>course_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\course_add.aspx.designer.cs">
+      <DependentUpon>course_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\course_mod.aspx.cs">
+      <DependentUpon>course_mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\course_mod.aspx.designer.cs">
+      <DependentUpon>course_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\studentgroup_add.aspx.cs">
+      <DependentUpon>studentgroup_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\studentgroup_add.aspx.designer.cs">
+      <DependentUpon>studentgroup_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\teachergroup_add.aspx.cs">
+      <DependentUpon>teachergroup_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\teachergroup_add.aspx.designer.cs">
+      <DependentUpon>teachergroup_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\testpaper_mod.aspx.cs">
+      <DependentUpon>testpaper_mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\testpaper_mod.aspx.designer.cs">
+      <DependentUpon>testpaper_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\user_add.aspx.cs">
+      <DependentUpon>user_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\user_add.aspx.designer.cs">
+      <DependentUpon>user_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\user_mod.aspx.cs">
+      <DependentUpon>user_mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\user_mod.aspx.designer.cs">
+      <DependentUpon>user_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommandCode\ExamAdd.cs" />
+    <Compile Include="CommandCode\ExamManagement.cs" />
+    <Compile Include="CommandCode\ExamShow.cs" />
+    <Compile Include="CommandCode\Exit.cs" />
+    <Compile Include="CommandCode\ICommand.cs" />
+    <Compile Include="CommandCode\PageManagement.cs" />
+    <Compile Include="CommandCode\QuestionManagement.cs" />
+    <Compile Include="CommandCode\UrlManagement.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommandCode\UserInfoAdd.cs" />
+    <Compile Include="CommandCode\UserInfoEdit.cs" />
+    <Compile Include="CommandCode\UserInfoManagement.cs" />
+    <Compile Include="CommandCode\UserInfoShow.cs" />
+    <Compile Include="ObserverCode\IObserver.cs" />
+    <Compile Include="ObserverCode\ITimer.cs" />
+    <Compile Include="ObserverCode\TimerManagement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student\answer.aspx.cs">
+      <DependentUpon>answer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\answer.aspx.designer.cs">
+      <DependentUpon>answer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\exam_a.aspx.cs">
+      <DependentUpon>exam_a.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\exam_a.aspx.designer.cs">
+      <DependentUpon>exam_a.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\have_test.aspx.cs">
+      <DependentUpon>have_test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\have_test.aspx.designer.cs">
+      <DependentUpon>have_test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\not_test.aspx.cs">
+      <DependentUpon>not_test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\not_test.aspx.designer.cs">
+      <DependentUpon>not_test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\score_query.aspx.cs">
+      <DependentUpon>score_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\score_query.aspx.designer.cs">
+      <DependentUpon>score_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\student.Master.cs">
+      <DependentUpon>student.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\student.Master.designer.cs">
+      <DependentUpon>student.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Student\student_mes.aspx.cs">
+      <DependentUpon>student_mes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\student_mes.aspx.designer.cs">
+      <DependentUpon>student_mes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\student_mes_mod.aspx.cs">
+      <DependentUpon>student_mes_mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\student_mes_mod.aspx.designer.cs">
+      <DependentUpon>student_mes_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\fillblank_add.aspx.cs">
+      <DependentUpon>fillblank_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\fillblank_add.aspx.designer.cs">
+      <DependentUpon>fillblank_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\fillblank_mod.aspx.cs">
+      <DependentUpon>fillblank_mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\fillblank_mod.aspx.designer.cs">
+      <DependentUpon>fillblank_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\judge_add.aspx.cs">
+      <DependentUpon>judge_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\judge_add.aspx.designer.cs">
+      <DependentUpon>judge_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\judge_mod.aspx.cs">
+      <DependentUpon>judge_mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\judge_mod.aspx.designer.cs">
+      <DependentUpon>judge_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\multiselect_add.aspx.cs">
+      <DependentUpon>multiselect_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\multiselect_add.aspx.designer.cs">
+      <DependentUpon>multiselect_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\multiselect_mod.aspx.cs">
+      <DependentUpon>multiselect_mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\multiselect_mod.aspx.designer.cs">
+      <DependentUpon>multiselect_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\singleselect_add.aspx.cs">
+      <DependentUpon>singleselect_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\singleselect_add.aspx.designer.cs">
+      <DependentUpon>singleselect_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\singleselect_mod.aspx.cs">
+      <DependentUpon>singleselect_mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\singleselect_mod.aspx.designer.cs">
+      <DependentUpon>singleselect_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\stu_grade_query.aspx.cs">
+      <DependentUpon>stu_grade_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\stu_grade_query.aspx.designer.cs">
+      <DependentUpon>stu_grade_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\stu_message_query.aspx.cs">
+      <DependentUpon>stu_message_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\stu_message_query.aspx.designer.cs">
+      <DependentUpon>stu_message_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\Teacher.Master.cs">
+      <DependentUpon>Teacher.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\Teacher.Master.designer.cs">
+      <DependentUpon>Teacher.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\teacher_mes.aspx.cs">
+      <DependentUpon>teacher_mes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\teacher_mes.aspx.designer.cs">
+      <DependentUpon>teacher_mes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\teacher_mes_mod.aspx.cs">
+      <DependentUpon>teacher_mes_mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\teacher_mes_mod.aspx.designer.cs">
+      <DependentUpon>teacher_mes_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\testpaper_add.aspx.cs">
+      <DependentUpon>testpaper_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\testpaper_add.aspx.designer.cs">
+      <DependentUpon>testpaper_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\testpaper_mod.aspx.cs">
+      <DependentUpon>testpaper_mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\testpaper_mod.aspx.designer.cs">
+      <DependentUpon>testpaper_mod.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Site.Master" />
+    <Content Include="Teacher\Teacher.Master" />
+    <Content Include="Teacher\Model.xls" />
+    <Content Include="Student\student.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
+      <Project>{0f9856c1-11ec-4789-a51d-4168024008d9}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessHelper\DataAccessHelper.csproj">
+      <Project>{e714a1f4-f76d-4cf5-94cc-8148b66e5e79}</Project>
+      <Name>DataAccessHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{28d0be87-1d7a-40fe-bef8-d3bf9caff94b}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61737</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61371/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
